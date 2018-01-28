@@ -29,10 +29,7 @@ var canvasWidth = window.innerWidth,
     createLines = function() {
         for (var e = 0; totalLines > e; e++) createLine()
     },
-    drawBeach = function() {
-        var e = color(248, 242, 206);
-        noStroke(), fill(e), triangle(0, 0, canvasWidth / 3, 0, 0, canvasHeight)
-    },
+
     setup = function() {
         createSVGElement(), createCanvas(canvasWidth, canvasHeight), createLines(), tsw.getUserAudio(function(e) {
             tsw.connect(e, analyser)
